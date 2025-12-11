@@ -4,87 +4,173 @@
     <meta charset="utf-8">
     <title>About Me - Sara Truffi</title>
     <style>
-      
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fcfaf5;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
       }
-      
+
       nav ul { list-style: none; }
-      nav ul li { display: inline; margin-right: 20px }
+      nav ul li { display: inline; margin-right: 20px; }
       nav a {
         text-decoration: none;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 18px;
         color: #d14f9c;
         padding: 6px 10px;
       }
-      nav a:hover {color: #ffb6db;}
+      nav a:hover { color: #ffb6db; }
       nav a:active { color: #aa2f79; }
       nav a:visited { color: #c6428f; }
-      
+
       .about-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
         align-items: center;
-        min-height: 100vh;
+        min-height: 70vh;
+        margin-top: 40px;
       }
-      
+
       .about-photo {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 10px;
       }
-      
+
       .about-text h1 {
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 2.8em;
         color: #d14f9c;
         margin-bottom: 20px;
       }
-      
+
       .about-text p {
-        font-family: Helvetica, sans-serif;
         font-size: 1em;
         line-height: 1.7;
         color: #444;
         max-width: 90%;
+        margin-bottom: 20px;
       }
-      
+
+      .info-table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 90%;
+        max-width: 500px;
+        font-size: 0.95em;
+      }
+
+      .info-table th,
+      .info-table td {
+        padding: 10px 12px;
+        text-align: left;
+      }
+
+      .info-table thead {
+        background-color: #d14f9c;
+      }
+
+      .info-table caption {
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+      }
+
       footer {
         background-color: #d14f9c;
         color: white;
         text-align: center;
         padding: 20px 0;
         margin-top: 40px;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
-      
-    </style> 
+    </style>
   </head>
+
   <body>
-    
     <div class="container">
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="work.html">Portfolio</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="contactme.html">Contact Me</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="https://sstruffi.github.io/home.html/">Home</a></li>
+          <li><a href="https://sstruffi.github.io/work.index/">Portfolio</a></li>
+          <li><a href="https://sstruffi.github.io/aboutme.html/">About Me</a></li>
+          <li><a href="https://sstruffi.github.io/contactme.html/">Contact Me</a></li>
+        </ul>
+      </nav>
+
       <div class="about-wrapper">
-      <img src="imgSara.jpeg" alt="Photo of Sara Truffi" class="about-photo">
-        
+        <img src="imgSara.jpeg"
+             alt="Portrait of designer Sara Truffi"
+             class="about-photo"
+             width="600"
+             height="800">
+
         <div class="about-text">
-        <h1>Sara Truffi</h1>
-          <p>Sara Truffi is a Toronto-based designer and a<br>Global Business and Digital Arts student at the<br>University of Waterloo. With a background in fine<br>arts, she approaches design through a strong<br>visual and storytelling lens, blending creativity<br>with intention and problem-solving. Her work<br>focuses on creating bold, expressive designs that<br>balance aesthetics with meaning. Sara enjoys<br>working across branding, illustration, and digital<br>design, often experimenting with colour,<br>composition, and mixed media to explore identity,<br>emotion, and visual narrative. She’s interested in<br>how design can communicate ideas clearly while<br>still feeling personal and engaging.</p>
+          <h1>Sara Truffi</h1>
+          <p>
+            Sara Truffi is a Toronto-based designer and a
+            Global Business and Digital Arts student at the
+            University of Waterloo. With a background in fine
+            arts, she approaches design through a strong visual
+            and storytelling lens, blending creativity with intention
+            and problem-solving.
+          </p>
+          <p>
+            Her work focuses on creating bold, expressive designs
+            that balance aesthetics with meaning. Sara enjoys working
+            across branding, illustration, and digital design, often
+            experimenting with colour, composition, and mixed media
+            to explore identity, emotion, and visual narrative.
+          </p>
+          <p>
+            She’s interested in how design can communicate ideas clearly
+            while still feeling personal and engaging.
+          </p>
+          <table class="info-table">
+            <caption>Quick Snapshot</caption>
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Program</td>
+                <td>Global Business and Digital Arts</td>
+              </tr>
+              <tr>
+                <td>School</td>
+                <td>University of Waterloo</td>
+              </tr>
+              <tr>
+                <td>Focus</td>
+                <td>Branding, illustration, and digital design</td>
+              </tr>
+              <tr>
+                <td>Location</td>
+                <td>Toronto, Ontario</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
+
     <footer>@ 2025 Sara Truffi - All Rights Reserved</footer>
   </body>
 </html>
