@@ -24,7 +24,6 @@
         padding: 20px;
       }
 
-      /* NAV */
       nav ul {
         list-style: none;
       }
@@ -56,14 +55,13 @@
         color: #c6428f;
       }
 
-      /* DROPDOWN */
       .dropdown-content {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         background-color: #ffffff;
-        min-width: 200px;
+        min-width: 220px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.08);
         overflow: hidden;
@@ -72,6 +70,7 @@
 
       .dropdown-content li {
         display: block;
+        margin: 0;
       }
 
       .dropdown-content a {
@@ -87,7 +86,6 @@
         display: block;
       }
 
-      /* HEADER */
       .page-header {
         text-align: center;
         padding: 55px 0 30px;
@@ -107,7 +105,6 @@
         color: #7a5d6d;
       }
 
-      /* ABOUT */
       .about-section {
         padding: 20px 0 50px;
       }
@@ -154,7 +151,6 @@
         margin-bottom: 18px;
       }
 
-      /* TAGS */
       .info-tags {
         margin-top: 20px;
         display: flex;
@@ -171,7 +167,6 @@
         border: 1px solid #f3d6e6;
       }
 
-      /* FOOTER */
       footer {
         background-color: #d14f9c;
         color: white;
@@ -181,7 +176,6 @@
         font-family: "Open Sans", sans-serif;
       }
 
-      /* MOBILE */
       @media (max-width: 900px) {
         .about-wrapper {
           grid-template-columns: 1fr;
@@ -204,6 +198,13 @@
           box-shadow: none;
           background: transparent;
           border-radius: 0;
+          min-width: unset;
+          margin-left: 10px;
+        }
+
+        .dropdown-content a {
+          padding: 8px 10px;
+          background: transparent;
         }
 
         .page-header h1 {
@@ -221,20 +222,20 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="https://sstruffi.github.io/home.html/">Home</a></li>
 
           <li class="dropdown">
-            <a href="work.index">Projects</a>
+            <a href="#">Projects</a>
             <ul class="dropdown-content">
-              <li><a href="videography.html">Videography</a></li>
-              <li><a href="branding.html">Branding</a></li>
-              <li><a href="web-app.html">Web and App</a></li>
-              <li><a href="graphic-design.html">Graphic Design</a></li>
+              <li><a href="https://sstruffi.github.io/Videography/">Videography</a></li>
+              <li><a href="https://sstruffi.github.io/Branding/">Branding</a></li>
+              <li><a href="https://sstruffi.github.io/web-app/">Web and App</a></li>
+              <li><a href="https://sstruffi.github.io/graphic-design/">Graphic Design</a></li>
             </ul>
           </li>
 
-          <li><a href="aboutme.html">About Me</a></li>
-          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="https://sstruffi.github.io/aboutme.html/">About Me</a></li>
+          <li><a href="https://sstruffi.github.io/contactme.html/">Contact Me</a></li>
         </ul>
       </nav>
     </div>
@@ -253,7 +254,6 @@
       <section class="about-section">
         <div class="about-card">
           <div class="about-wrapper">
-            
             <img src="imgSara.jpeg" alt="Portrait of Sara Truffi" class="about-photo">
 
             <div class="about-text">
@@ -284,7 +284,6 @@
                 <span>Illustration</span>
                 <span>Digital Design</span>
               </div>
-
             </div>
           </div>
         </div>
